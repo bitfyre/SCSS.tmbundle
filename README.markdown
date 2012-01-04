@@ -11,6 +11,10 @@ Notes about this feature:
 
 Yo shouldn't use this feature to convert the whole XHTML to SCSS. It is meant to selectively copy and paste your XHTML to SCSS Document. In the Screencast I did a complete layout parse for the sake of demonstration. However this is a bad practice since it generates unnecessary nesting and of course bloat.
 
+# New Feature: XHTML to SCSS Converter now uses style declarations!
+
+See it in action! [Screencast](http://screenr.com/fP4).
+
 #### The minimum requirements for this command to work:
 
 - [Nokogiri](http://nokogiri.org/)
@@ -23,15 +27,6 @@ Yo shouldn't use this feature to convert the whole XHTML to SCSS. It is meant to
 ![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.jpg)
 
 You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMate-Kuroir-Theme)
-
-####Blackboard Theme
-![Screen](http://dl.dropbox.com/u/4651065/blackboard-theme.jpg)
-
-####Cobalt Theme
-![Screen](http://dl.dropbox.com/u/4651065/cobalt-theme.jpg)
-
-####Dawn Theme
-![Screen](http://dl.dropbox.com/u/4651065/dawn-theme.jpg)
 
 ## Installation
 ### Textmate (OS X)
@@ -53,6 +48,14 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
     mv kuroir-SCSS.tmbundle* "SCSS.tmbundle"
     gem install nokogiri
     osascript -e 'tell app "TextMate" to reload bundles'
+
+
+## Before Forking
+
+If you want your patches merged to the main branch, **please** do the following:
+
+1. If you're going to modify the Grammar, **first** edit the documented & commented "source" located in `SCSS.tmbundle / Syntaxes / source.textmate`. **then** apply it to Textmate. The reason behind this is that Textmate removes comments and indentations, making the grammar file hard to work on.
+2. PULL REQUEST, so I know you want me to pull!
 
 #### Known Issues:
 

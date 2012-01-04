@@ -5,20 +5,22 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/ruby
-# Needs Nokogiri (gem install Nokogiri)
-require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/command'</string>
+	<string>#!/usr/bin/env ruby
+require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/scroller'
+scroller('substract', 10)</string>
+	<key>fallbackInput</key>
+	<string>word</string>
 	<key>input</key>
-	<string>none</string>
+	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^@v</string>
+	<string>^~</string>
 	<key>name</key>
-	<string>Paste HTML as SCSS</string>
+	<string>Decrease Number by 10</string>
 	<key>output</key>
-	<string>insertAsSnippet</string>
+	<string>replaceSelectedText</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>uuid</key>
-	<string>16977A7A-A382-48CF-B7AB-8CC4A8CF83C4</string>
+	<string>03333522-BEEE-4B7F-8DAE-CCA07E34E7C8</string>
 </dict>
 </plist>

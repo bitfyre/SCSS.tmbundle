@@ -3,14 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@include border-radius(${1:4px 4px});</string>
+	<string>/*
+  @TODO: Add docs to $1!
+*/
+@mixin ${1:mixin-name}${2:(${3:\$params})} {
+  $0
+}</string>
 	<key>name</key>
-	<string>border-radius</string>
+	<string>= Shortcut to @mixin</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>+br</string>
+	<string>=</string>
 	<key>uuid</key>
-	<string>FAFE06D0-F889-405E-B72B-CC7266AF2A6C</string>
+	<string>A24F91CB-A3E5-4907-8259-5E7645E39BAF</string>
 </dict>
 </plist>

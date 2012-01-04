@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{$0}</string>
-	<key>keyEquivalent</key>
-	<string>{</string>
+	<string>/*
+  $0
+*/</string>
 	<key>name</key>
-	<string>Insert Matching Bracket</string>
+	<string>doc</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
+	<key>tabTrigger</key>
+	<string>doc</string>
 	<key>uuid</key>
-	<string>12D2899E-572E-4EDB-AA88-F1494C87169D</string>
+	<string>9493D079-CCF5-45AD-A905-CB1CEC5CEBD2</string>
 </dict>
 </plist>

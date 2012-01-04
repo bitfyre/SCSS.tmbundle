@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@include border-radius(${1:4px 4px});</string>
+	<string>@if ${1:conditions} {
+	$0
+}</string>
 	<key>name</key>
-	<string>border-radius</string>
+	<string>@if</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>+br</string>
+	<string>if</string>
 	<key>uuid</key>
-	<string>FAFE06D0-F889-405E-B72B-CC7266AF2A6C</string>
+	<string>D4E56475-16C0-4DB3-BEFF-9FBC4F83C166</string>
 </dict>
 </plist>
